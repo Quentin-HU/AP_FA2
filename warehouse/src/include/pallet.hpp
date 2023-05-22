@@ -18,7 +18,3 @@ public:
     pallet();
 };
 
-pallet::pallet(/* args */)
-{
-}
-
