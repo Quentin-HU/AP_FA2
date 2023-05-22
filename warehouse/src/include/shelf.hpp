@@ -1,13 +1,10 @@
 #pragma once
+#include <array>
 
 class shelf
 {
-private:
-    /* data */
 public:
-    shelf(/* args */);
+    std::array <int, 4> Pallet;
+    shelf();
+    bool swapPallet(int slot1, int slot2);
 };
-
-shelf::shelf(/* args */)
-{
-}
