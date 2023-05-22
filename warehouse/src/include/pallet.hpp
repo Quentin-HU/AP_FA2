@@ -10,10 +10,10 @@ private:
 public:
     std::string getItemName() {return itemName;};
     int getItemCount() {return itemCount;};
-    int getremainingspace() {return itemCapacity - itemCount;};
+    int getRemainingSpace() {return itemCapacity - itemCount;};
     bool reallocateEmptyPallet(std::string itemName, int itemCapacity);
     bool takeOne();
-    bool removeOne();
+    bool putOne();
     pallet(int itemCount, std::string itemName, int itemCapacity);
     pallet();
 };
