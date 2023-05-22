@@ -1,11 +1,21 @@
 #pragma once
+#include <string>
 
 class pallet
 {
 private:
-    /* data */
+    int itemCount;
+    std::string itemName;
+    int itemCapacity;
 public:
-    pallet(/* args */);
+    std::string getItemName() {return itemName;};
+    int getItemCount() {return itemCount;};
+    int getremainingspace() {return itemCapacity - itemCount;};
+    bool reallocateEmptyPallet(std::string itemName, int itemCapacity);
+    bool takeOne();
+    bool removeOne();
+    pallet(int itemCount, std::string itemName, int itemCapacity);
+    pallet();
 };
 
 pallet::pallet(/* args */)
